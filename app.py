@@ -4,10 +4,35 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="Aircraft Performance Analysis", page_icon="✈️", layout="wide")
+st.set_page_config(page_title="Aircraft Performance Analysis | Mohith", page_icon="✈️", layout="wide")
 
-st.title("✈️ Aircraft Performance Analysis")
-st.caption("Thrust, power, climb, V-n envelope, glide and takeoff performance")
+# ---------------- FRONT PAGE / PROFILE HEADER ----------------
+with st.container(border=True):
+    profile_col, title_col = st.columns([1, 3], vertical_alignment="center")
+
+    with profile_col:
+        st.image("profile.jpg", width=190)
+
+    with title_col:
+        st.markdown(
+            """
+            <div style="padding: 8px 0;">
+                <p style="font-size: 15px; color: #64748b; margin-bottom: 4px;">
+                    WELCOME TO MY PROJECT
+                </p>
+                <h1 style="margin: 0; font-size: 2.4rem;">Mohith</h1>
+                <h2 style="margin: 5px 0 8px 0; font-size: 1.45rem;">
+                    ✈️ Aircraft Performance Analysis
+                </h2>
+                <p style="font-size: 15px; color: #64748b; margin-top: 0;">
+                    Thrust • Power • Rate of Climb • V-n Diagram • Gliding • Takeoff
+                </p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+st.divider()
 
 # ---------------- SIDEBAR: INPUT PARAMETERS ----------------
 st.sidebar.header("Aircraft parameters")
