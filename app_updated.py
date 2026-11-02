@@ -11,7 +11,7 @@ with st.container(border=True):
     profile_col, title_col = st.columns([1, 3], vertical_alignment="center")
 
     with profile_col:
-        st.image("profile.jpg", width=120)
+        st.image("profile.jpg.jpeg", width=120)
 
     with title_col:
         st.markdown(
