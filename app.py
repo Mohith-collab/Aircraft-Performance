@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="Aircraft Performance Analysis |DEERAJ", page_icon="✈️", layout="wide")
+st.set_page_config(page_title="Aircraft Performance Analysis | MOHITH ", page_icon="✈️", layout="wide")
 
 # ---------------- FRONT PAGE / PROFILE HEADER ----------------
 with st.container(border=True):
