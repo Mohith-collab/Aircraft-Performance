@@ -4,14 +4,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="Aircraft Performance Analysis | Mohith", page_icon="✈️", layout="wide")
+st.set_page_config(page_title="Aircraft Performance Analysis |DEERAJ", page_icon="✈️", layout="wide")
 
 # ---------------- FRONT PAGE / PROFILE HEADER ----------------
 with st.container(border=True):
     profile_col, title_col = st.columns([1, 3], vertical_alignment="center")
 
-    with profile_col:
-        st.image("profile.jpg.jpeg", width=190)
 
     with title_col:
         st.markdown(
